@@ -5,10 +5,12 @@
   "main": "server.cjs",
   "type": "commonjs",
   "scripts": {
-    "start": "node server.cjs",
+    "start": "node api/index.js",
+    "vercel-build": "echo 'skip build, serverless handled'",
     "dev": "nodemon server.cjs",
-    "build:exe": "pkg . --targets node18-win-x64 --out-path dist"
+      "build:exe": "pkg . --targets node18-win-x64 --out-path dist"
   },
+
   "engines": {
     "node": ">=18.x"
   },

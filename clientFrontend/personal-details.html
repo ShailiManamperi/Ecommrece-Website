@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Personal Details | Shejama Group</title>
+
+    <link rel="shortcut icon" href="img/shejama facvoin (1).png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header_area sticky-header">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light main_box">
+                <div class="container">
+                    <a class="navbar-brand logo_h" href="index.html"><img src="img/navlogo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="category.html">Shop</a></li>
+                            <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                            <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="personal-details.html">My Account</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item"><a href="cart.html" class="cart"><span class="ti-bag"></span></a></li>
+                            <li class="nav-item"><a href="personal-details.html" class="account"><span class="ti-user"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>My Account</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="personal-details.html">Account</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ Personal Details Area =================-->
+    <section class="checkout_area section_gap">
+        <div class="container">
+            <div class="billing_details">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h3>Personal Details</h3>
+                        <form id="profile-form" class="row contact_form" novalidate>
+                            <div class="col-md-6 form-group p_star">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <label>Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <label>Company</label>
+                                <input type="text" class="form-control" id="company" placeholder="Company Name">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <label>Contact 1</label>
+                                <input type="text" class="form-control" id="contact1" placeholder="Primary Contact">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <label>Contact 2</label>
+                                <input type="text" class="form-control" id="contact2" placeholder="Secondary Contact">
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <label>Address</label>
+                                <textarea id="address" class="form-control" placeholder="Full Address" rows="2"></textarea>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <button type="submit" class="primary-btn">Save / Update Details</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="order_box">
+                            <h2>My Orders</h2>
+                            <ul class="list" id="my-orders">
+                                <li><a href="#">Product <span>Total</span></a></li>
+                                <!-- Orders will load here -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================End Personal Details Area =================-->
+
+    <!-- JS -->
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/control/profile.js"></script>
+</body>
+</html>

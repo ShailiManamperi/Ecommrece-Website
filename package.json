@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "serverless-http": "^4.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.105.0"
+  },
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   }
 }
